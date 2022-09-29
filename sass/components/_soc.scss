@@ -1,0 +1,42 @@
+.soc {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.soc__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+}
+
+.soc__link--footer-color {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: #fff;
+}
+
+.soc__icon {
+    fill: #AFB1B8;
+}
+
+.soc__icon--footer-color {
+    fill: #fff;
+}
+
+.soc__link:hover,
+.soc__link:focus {
+    background-color: var(--accent-color);
+}
+
+.soc__link:hover .soc__icon,
+.soc__link:focus .soc__icon {
+    fill: #FFFFFF;
+}

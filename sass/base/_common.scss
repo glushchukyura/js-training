@@ -1,0 +1,44 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #212121;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.navigation__list,
+.connection__list,
+.principles__list,
+.tasks__list,
+.team__list,
+.soc__list,
+.permanent-clients__list,
+.address__list,
+.filter-list,
+.projects-list,
+// .mob-menu__list,
+// .mob-connection__list,
+// .mob-soc__list,
+.mobile-nav,
+.mobile-contacts,
+.mobile-sm
+ {
+    list-style: none;
+}
+
+.link,
+link:visited {
+    text-decoration: none;
+    color: inherit
+}

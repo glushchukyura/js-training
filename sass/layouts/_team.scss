@@ -1,0 +1,119 @@
+.team {
+    background: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    @include mobile {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @include tablet {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        }
+
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.team__title--position {
+    margin-bottom: 50px;
+
+    @include mobile {
+        margin-bottom: 30px;
+    }
+    
+    @include tablet {
+        margin-bottom: 30px;
+    }
+    
+    @include desktop {
+        margin-bottom: 50px;
+    }
+}
+
+.team__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    @include mobile {
+        font-size: 28px;
+        line-height: 1.18;
+    }
+    
+    @include tablet {
+        font-size: 28px;
+        line-height: 1.18;
+    }
+    
+    @include desktop {
+        font-size: 36px;
+        line-height: 1.17;
+    }
+}
+
+.team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.team__item--position {
+    width: 100%;
+
+    @include mobile {
+        width: 100%;
+    }
+
+    @include tablet {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @include desktop {
+        width: calc((100% - 90px) / 4);
+    }
+    
+}
+.team__box {
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+
+    @include mobile {
+        padding-bottom: 24px;
+    }
+
+    @include tablet {
+        padding-bottom: 24px;
+    }
+
+    @include desktop {
+        padding-bottom: 30px;
+    }
+}
+
+.team__name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team__member-title {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    margin-bottom: 16px;
+}
+

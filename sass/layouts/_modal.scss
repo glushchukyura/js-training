@@ -1,0 +1,225 @@
+.modal {
+    position: absolute;
+    width: 290px;
+    min-height: 581px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+
+    @include mobile {
+        width: 450px;
+    }
+
+    @include desktop {
+        width: 528px;
+    }
+}
+
+.modal-close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transition: border-color 250ms var(--cubic);
+
+    &:hover {
+        border-color: var(--accent-color);
+    }
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.close-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: fill 250ms var(--cubic);
+
+    .modal-close:hover & {
+        fill: var(--accent-color);
+    }
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+    color: #212121;
+
+    @include mobile {
+        line-height: 1.5;
+    }
+}
+
+.input-field {
+    margin-bottom: 10px;
+
+}
+
+.form-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .form-input:focus+& {
+        fill: var(--accent-color);
+    }
+}
+
+.input-wrap {
+    position: relative;
+}
+
+.input-title {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+
+.form-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    font-size: 16px;
+}
+
+.form-input:focus,
+.modal-comment:focus {
+    border: 1px solid var(--accent-color);
+    outline: 1px solid var(--accent-color);
+}
+
+.modal-comment {
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+
+    &:placeholder-shown {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
+}
+
+.check-policy {
+    font-size: 10px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+        font-size: 12px;
+    }
+
+    @include desktop {
+        font-size: 14px;
+    }
+}
+
+.check-policy .check-policy-icon {
+    display: flex;
+    align-items: center;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 4px;
+    margin-right: 8px;
+    transition-property: background-color, border-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+    fill: transparent;
+}
+
+.input-check:checked+.check-policy .check-policy-icon {
+    background-color: #2196F3;
+    border-color: var(--accent-color);
+}
+
+.input-check:focus+.check-policy .check-policy-icon {
+    border-color: var(--accent-color);
+}
+
+.input-check:checked+.check-policy .icon-check {
+    fill: #fff;
+}
+
+.input-field-policy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.user-policy-link {
+    position: relative;
+    margin-left: 5px;
+    color: var(--accent-color);
+}
+
+.policy-underline {
+    display: inline-block;
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        left: 0;
+        bottom: 5px;
+        background-color: var(--accent-color);
+    }
+}
+
+.submit-btn {
+    min-width: 200px;
+    min-height: 50px;
+    padding: 10px 52px 10px 52px;
+    margin: 30px auto 0px;
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-width: 0px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: block;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: transform 250ms var(--cubic), opacity 250ms var(--cubic),
+        background-color 250ms var(--cubic);
+
+    &:hover {
+        transform: scaleX(1.02);
+    }
+}

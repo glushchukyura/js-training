@@ -1,0 +1,135 @@
+.footer {
+    background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer--flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include mobile {
+        display: block;
+    }
+
+    @include tablet {
+        }
+
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+}
+
+.footer__contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+
+    @include mobile {
+        display: block;
+    }
+
+    @include tablet {
+        margin-bottom: 0;
+
+        }
+
+    @include desktop {
+        text-align: left;
+    }
+}
+
+.address--position {
+    margin-top: 20px;
+}
+
+.address__item--position {
+    margin-bottom: 8px;
+
+    @include desktop {
+        margin-bottom: 9px;
+    }
+
+}
+
+.map__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.mail__link,
+.tel__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.join-us {
+    max-width: 206px;
+}
+
+.join-us--position{
+    margin-bottom: 60px;
+
+    @include mobile {
+            margin: 0 auto 60px;
+        }
+    
+        @include tablet {
+            margin: 0;
+        }
+    
+        @include desktop {
+        margin-left: 70px;
+        }
+}
+
+.join-us__title {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    text-align: center;
+
+    @include desktop {
+        text-align: left;
+    }
+}
+
+.footer--tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+        
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+        align-items: baseline;
+        margin-bottom: 60px;
+    }
+    
+    @include desktop {
+        align-items: baseline;
+        margin-bottom: 0px;
+    }
+}
